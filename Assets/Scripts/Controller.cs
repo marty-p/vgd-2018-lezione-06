@@ -53,7 +53,7 @@ public class Controller : MonoBehaviour {
 
             nextFire = Time.time + cooldownTime;
             Instantiate(bullet, spawn.position, spawn.rotation);
-            // Debug.Log(spawn.position);
+
         }
 
 

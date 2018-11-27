@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class Health : MonoBehaviour {
 
-    public float health = 100f;
+    private float healthAmount = 100f;
 
-    public void LoseHealth(float damage){
-        health -= damage;
-        if (health < 0)
-            Destroy(gameObject);
-        else
-           Debug.Log(health);
+    public void loseHealth(float amountToLose)
+    {
+        if (amountToLose < 100f)
+            healthAmount -= amountToLose;
+
+        Debug.Log(healthAmount);
     }
+
 }
